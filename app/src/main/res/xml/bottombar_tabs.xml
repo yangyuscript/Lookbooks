@@ -1,0 +1,23 @@
+<tabs>
+    <tab
+        id="@+id/tab_favorites"
+        title="首页"
+        icon="@mipmap/ic_home"
+        inActiveColor="@color/colorPrimary"
+        activeColor="@color/color_bottombar_selected"
+        />
+    <tab
+        id="@+id/tab_nearby"
+        title="周边"
+        icon="@mipmap/ic_zoom_out_map"
+        inActiveColor="@color/colorPrimary"
+        activeColor="@color/color_bottombar_selected"
+        />
+    <tab
+        id="@+id/tab_friends"
+        title="个人"
+        icon="@mipmap/ic_account_circle"
+        inActiveColor="@color/colorPrimary"
+        activeColor="@color/color_bottombar_selected"
+        />
+</tabs>
