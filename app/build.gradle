@@ -3,6 +3,13 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
+
+    sourceSets{
+        main{
+            jniLibs.srcDirs 'libs'
+        }
+    }
+
     defaultConfig {
         applicationId "com.lin.lookbooks"
         minSdkVersion 16
@@ -20,7 +27,7 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
@@ -34,4 +41,6 @@ dependencies {
     compile 'com.roughike:bottom-bar:2.3.1'
     compile 'com.android.support:support-v4:25.3.1'
     testCompile 'junit:junit:4.12'
+    compile files('libs/TencentMapSDK_Raster_v_1.2.8.1.c02ec64.jar')
+    compile files('libs/TencentLocationSdk_v6.2.5.3_r15b3b3cc_20171103_115903.jar')
 }

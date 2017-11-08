@@ -2,11 +2,9 @@ package com.lin.lookbooks.ui.activity;
 
 
 import android.support.annotation.IdRes;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-
 import com.lin.lookbooks.R;
 import com.lin.lookbooks.ui.fragment.Favorites;
 import com.lin.lookbooks.ui.fragment.Friends;
@@ -14,7 +12,7 @@ import com.lin.lookbooks.ui.fragment.Nearby;
 import com.roughike.bottombar.BottomBar;
 import com.roughike.bottombar.OnTabSelectListener;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity{
     private Favorites favorites_fragment;
     private Friends friends_fragment;
     private Nearby nearby_fragment;
@@ -36,12 +34,12 @@ public class MainActivity extends AppCompatActivity {
                         fragmentTransaction.show(favorites_fragment);
                         fragmentTransaction.commit();
                         break;
-                    case R.id.tab_friends:
+                    case R.id.tab_nearby:
                         fragmentTransaction.hide(favorites_fragment).hide(friends_fragment);
                         fragmentTransaction.show(nearby_fragment);
                         fragmentTransaction.commit();
                         break;
-                    case R.id.tab_nearby:
+                    case R.id.tab_friends:
                         fragmentTransaction.hide(favorites_fragment).hide(nearby_fragment);
                         fragmentTransaction.show(friends_fragment);
                         fragmentTransaction.commit();
