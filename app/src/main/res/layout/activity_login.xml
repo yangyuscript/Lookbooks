@@ -7,7 +7,7 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingTop="50dp"
     tools:context="com.lin.lookbooks.ui.activity.LoginActivity">
 
     <ScrollView
@@ -27,6 +27,7 @@
                 android:gravity="center_horizontal"
                 android:textSize="60sp"
                 android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
                 />
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
@@ -37,6 +38,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/prompt_email"
+                    android:textColorHint="@color/colorPrimary"
                     android:inputType="textEmailAddress"
                     android:maxLines="1"
                     android:singleLine="true" />
@@ -52,6 +54,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/prompt_password"
+                    android:textColorHint="@color/colorPrimary"
                     android:inputType="textPassword"
                     android:maxLines="1"
                     android:singleLine="true" />
@@ -64,7 +67,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
+                android:background="@drawable/btn_round"
                 android:text="@string/action_sign_in"
+                android:onClick="goMain"
+                android:textSize="20dip"
+                android:textColor="@color/fontcolor_white"
                 android:textStyle="bold" />
             <LinearLayout
                 android:layout_width="match_parent"
@@ -76,12 +83,15 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="立即注册"
+                    android:onClick="goRegist"
                     android:gravity="right"
+                    android:textColor="@color/colorPrimary"
                     android:layout_marginRight="20sp"
                     />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
                     android:text="忘记密码？"
                     android:gravity="right"
 

@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#9E9E9E</color>
-    <color name="colorPrimaryDark">#9E9E9E</color>
-    <color name="colorAccent">#9E9E9E</color>
-    <color name="color_bottombar_selected">#5D4037</color>
+    <color name="colorPrimary">#FFEB3B</color>
+    <color name="colorPrimaryDark">#FFEB3B</color>
+    <color name="colorAccent">#FFEB3B</color>
+    <color name="color_bottombar_selected">#FFEB3B</color>
+    <color name="color_page_background">#F2F2F2</color>
+    <color name="btn_red">#F44336</color>
+    <color name="fontcolor_white">#fff</color>
 </resources>

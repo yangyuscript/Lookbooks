@@ -21,6 +21,8 @@
     <!-- 访问网络的变化, 需要某些信息用于网络定位 -->
     <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
     <!--腾讯地图 SDK 要求的权限(结束)-->
+    <!-- if you want to load images from a file OR from the internet -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -32,16 +34,17 @@
             android:name="TencentMapSDK"
             android:value="3XABZ-ORKKX-FEN4Q-ZHS4O-4HOH6-RNB7E"
             />
-        <activity android:name=".ui.activity.MainActivity">
+        <activity android:name=".ui.activity.LoginActivity"
+                    android:label="登录"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".ui.activity.LoginActivity"
-            android:label="@string/title_activity_login" />
+        <activity android:name=".ui.activity.MainActivity"/>
+
         <activity android:name=".ui.activity.RegistActivity"
             android:label="@string/title_activity_regist"
             />

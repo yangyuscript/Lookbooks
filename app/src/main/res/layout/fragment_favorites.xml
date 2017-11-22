@@ -2,13 +2,41 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D32F2F"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/fontcolor_white"
     tools:context="com.lin.lookbooks.ui.fragment.Favorites">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="one" />
+        >
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <SearchView
+                android:id="@+id/searchbook_sv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:iconifiedByDefault="false"
+                android:queryHint="输入书籍关键字"
+                />
+            <com.youth.banner.Banner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="180dp">
+            </com.youth.banner.Banner>
+            <GridView
+                android:id="@+id/gridView"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:background="@color/fontcolor_white"
+                android:stretchMode="columnWidth"
+                android:numColumns="4"
+                >
+            </GridView>
+        </LinearLayout>
+    </ScrollView>
 </FrameLayout>

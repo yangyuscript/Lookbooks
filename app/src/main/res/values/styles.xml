@@ -8,4 +8,12 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <!--textstyle for layout-->
+    <style name="textstyleoflayout" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">15dip</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
 </resources>

@@ -5,6 +5,8 @@ import android.support.annotation.IdRes;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.facebook.drawee.backends.pipeline.Fresco;
 import com.lin.lookbooks.R;
 import com.lin.lookbooks.ui.fragment.Favorites;
 import com.lin.lookbooks.ui.fragment.Friends;
@@ -19,6 +21,7 @@ public class MainActivity extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Fresco.initialize(this);
         setContentView(R.layout.activity_main);
 
         BottomBar bottomBar=(BottomBar)findViewById(R.id.bottomBar);
